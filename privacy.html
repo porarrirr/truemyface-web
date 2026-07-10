@@ -7,15 +7,15 @@
     <meta name="description" content="TrueMyFace のプライバシーポリシー。撮影・解析は端末内完結、外部送信なし。">
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body data-page="privacy">
 <header class="site-header">
     <div class="header-inner">
-        <a href="index.html" class="site-logo">TrueMyFace</a>
+        <a href="index.html" class="site-logo" data-nav="index.html">TrueMyFace</a>
         <nav class="site-nav">
-            <a href="index.html">ホーム</a>
-            <a href="support.html">サポート</a>
-            <a href="privacy.html" class="active">プライバシー</a>
-            <a href="terms.html">利用規約</a>
+            <a href="index.html" data-nav="index.html" data-i18n="nav.home">ホーム</a>
+            <a href="support.html" data-nav="support.html" data-i18n="nav.support">サポート</a>
+            <a href="privacy.html" class="active" data-nav="privacy.html" data-i18n="nav.privacy">プライバシー</a>
+            <a href="terms.html" data-nav="terms.html" data-i18n="nav.terms">利用規約</a>
         </nav>
     </div>
 </header>
@@ -103,12 +103,13 @@
 
 <footer class="site-footer">
     <div class="footer-links">
-        <a href="index.html">ホーム</a>
-        <a href="support.html">サポート</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="terms.html">利用規約</a>
+        <a href="index.html" data-nav="index.html" data-i18n="footer.home">ホーム</a>
+        <a href="support.html" data-nav="support.html" data-i18n="footer.support">サポート</a>
+        <a href="privacy.html" data-nav="privacy.html" data-i18n="footer.privacy">プライバシーポリシー</a>
+        <a href="terms.html" data-nav="terms.html" data-i18n="footer.terms">利用規約</a>
     </div>
-    <p>© 2026 TrueMyFace. お問い合わせ: <a href="mailto:truemyface@rarari.org">truemyface@rarari.org</a></p>
+    <p data-footer-contact>© 2026 TrueMyFace. お問い合わせ: <a href="mailto:truemyface@rarari.org">truemyface@rarari.org</a></p>
 </footer>
+<script src="assets/locale.js" defer></script>
 </body>
 </html>

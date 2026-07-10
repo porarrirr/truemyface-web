@@ -56,13 +56,31 @@ a:hover { text-decoration: underline; }
 .header-inner {
     max-width: var(--max-width); margin: 0 auto;
     padding: 16px var(--screen-padding);
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
 }
 .site-logo { font-size: 18px; font-weight: 600; letter-spacing: 0.02em; color: var(--text-primary); text-decoration: none; }
 .site-logo:hover { text-decoration: none; color: var(--accent-rose); }
-.site-nav { display: flex; gap: 20px; font-size: 13px; }
+.site-nav { display: flex; gap: 20px; font-size: 13px; flex-wrap: wrap; }
 .site-nav a { color: var(--text-secondary); }
 .site-nav a.active, .site-nav a:hover { color: var(--accent-rose); }
+
+.locale-switcher {
+    display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end;
+    margin-left: auto;
+}
+.locale-button {
+    appearance: none; border: 0.5px solid var(--hairline); background: var(--surface);
+    color: var(--text-secondary); font: inherit; font-size: 11px; line-height: 1;
+    padding: 6px 8px; border-radius: 999px; cursor: pointer;
+}
+.locale-button:hover { color: var(--accent-rose); border-color: color-mix(in srgb, var(--accent-rose) 35%, var(--hairline)); }
+.locale-button.active {
+    color: var(--base); background: var(--accent-rose); border-color: var(--accent-rose);
+}
+@media (max-width: 640px) {
+    .header-inner { flex-wrap: wrap; }
+    .locale-switcher { width: 100%; justify-content: flex-start; margin-left: 0; }
+}
 
 main { max-width: var(--max-width); margin: 0 auto; padding: 32px var(--screen-padding) 48px; }
 h1 { font-size: 28px; font-weight: 600; line-height: 1.3; margin: 0 0 8px; }
