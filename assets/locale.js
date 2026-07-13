@@ -111,6 +111,13 @@
         var main = document.querySelector("main");
         if (!main || !strings || !currentPage) return;
 
+        // The privacy policy must never fall back to a stale translation. Until the
+        // updated legal text is translated, show the current Japanese source of truth.
+        if (currentPage === "privacy") {
+            if (originalMainHTML != null) main.innerHTML = originalMainHTML;
+            return;
+        }
+
         if (locale === DEFAULT_LOCALE) {
             if (originalMainHTML != null) {
                 main.innerHTML = originalMainHTML;
