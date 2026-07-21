@@ -1,12 +1,11 @@
 # TrueMyFace Web
 
-TrueMyFace の公開用ウェブページ（GitHub Pages）。
+TrueMyFace の公開用ウェブページ（GitHub Pages）。アプリ DesignSystem 準拠のネオブルータル濃紺 UI。
 
 - `index.html` — ランディング
 - `support.html` — サポート / FAQ
 - `privacy.html` — プライバシーポリシー
 - `terms.html` — 利用規約
-- `app-ads.txt` — AdMob の認定販売者情報
 
 ## ローカルプレビュー
 
