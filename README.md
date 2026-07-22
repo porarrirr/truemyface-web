@@ -6,6 +6,7 @@ TrueMyFace の公開用ウェブページ（GitHub Pages）。アプリ DesignSy
 - `support.html` — サポート / FAQ
 - `privacy.html` — プライバシーポリシー
 - `terms.html` — 利用規約
+- `app-ads.txt` — AdMob の認定販売者情報
 
 ## ローカルプレビュー
 
