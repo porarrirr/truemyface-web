@@ -1,18 +1,24 @@
 # TrueMyFace Web
 
-TrueMyFace の公開用ウェブページ（GitHub Pages）。アプリ DesignSystem 準拠のネオブルータル濃紺 UI。
+English | [日本語](README.ja.md)
 
-- `index.html` — ランディング
-- `support.html` — サポート / FAQ
-- `privacy.html` — プライバシーポリシー
-- `terms.html` — 利用規約
-- `app-ads.txt` — AdMob の認定販売者情報
+The public website for TrueMyFace, an iOS app that guides the user through a facial scan and presents the resulting analysis. This repository provides the product introduction, support information, privacy policy, and terms required for the app's public presence.
 
-## ローカルプレビュー
+## Published content
 
-```sh
+- `index.html` — product landing page
+- `support.html` — support and frequently asked questions
+- `privacy.html` — privacy policy
+- `terms.html` — terms of use
+- `app-ads.txt` — authorized digital-seller information for AdMob
+
+The site uses the same dark navy, neo-brutalist visual direction as the app.
+
+## Local preview
+
+```bash
 cd Web
 python3 -m http.server 8765
 ```
 
-http://localhost:8765/index.html を開いて確認してください。
+Then open http://localhost:8765/index.html.
